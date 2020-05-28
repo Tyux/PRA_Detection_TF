@@ -278,7 +278,8 @@ def register_obj365(basedir):
                   'objects365_Tiny_val.json',
                   'val',
                   'objects365_test_info.json',
-                  'objects365_test.json',]:
+                  'objects365_test.json',
+                  'test',]:
         name = split
         DatasetRegistry.register(name, lambda x=split: COCODetection(basedir, x))
         DatasetRegistry.register_metadata(name, 'class_names', class_names)
