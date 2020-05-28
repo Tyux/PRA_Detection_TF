@@ -1,0 +1,14 @@
+#!/bin/bash
+#SBATCH -p caspra
+#SBATCH -N 1
+#SBATCH -J tf-1node-example
+#SBATCH -n 32
+#SBATCH --gres=dcu:4
+date
+
+module load apps/TensorFlow/1.14.0/hpcx-2.4.1-gcc-7.3.1
+which python3
+which mpirun
+export PYTHONPATH=`pwd`/../:${PYTHONPATH}
+export TF_GPU_THREAD_COUNT=4
+python3 predict.py --load train_log/fasterrcnn_obj365/model-2160000 --evaluate eval.json
