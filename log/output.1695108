@@ -1,0 +1,30 @@
+Thu May 28 23:51:24 CST 2020
+/public/software/apps/DeepLearning/TensorFlow/python-3.6.8-tf1.14-build/bin/python3
+/opt/hpc/software/mpi/hpcx/v2.4.1/gcc-7.3.1/bin/mpirun
+Traceback (most recent call last):
+  File "/public/home/chauncc/PRA_Detection_TF/train.py", line 11, in <module>
+    from tensorpack import *
+ModuleNotFoundError: No module named 'tensorpack'
+Traceback (most recent call last):
+  File "/public/home/chauncc/PRA_Detection_TF/train.py", line 11, in <module>
+    from tensorpack import *
+ModuleNotFoundError: No module named 'tensorpack'
+Traceback (most recent call last):
+  File "/public/home/chauncc/PRA_Detection_TF/train.py", line 11, in <module>
+    from tensorpack import *
+ModuleNotFoundError: No module named 'tensorpack'
+Traceback (most recent call last):
+  File "/public/home/chauncc/PRA_Detection_TF/train.py", line 11, in <module>
+    from tensorpack import *
+ModuleNotFoundError: No module named 'tensorpack'
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun detected that one or more processes exited with non-zero status, thus causing
+the job to be terminated. The first process to do so was:
+
+  Process name: [[33081,1],0]
+  Exit code:    1
+--------------------------------------------------------------------------

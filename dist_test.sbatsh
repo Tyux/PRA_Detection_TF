@@ -11,4 +11,5 @@ which python3
 which mpirun
 export PYTHONPATH=`pwd`/../:${PYTHONPATH}
 export TF_GPU_THREAD_COUNT=4
-python3 predict.py --load train_log/fasterrcnn_obj365/model-2160000 --test test.json
+#python3 predict.py --load train_log/fasterrcnn_obj365/model-2160000 --test test.json
+python3 predict.py --load train_log/log_1695222/model-92500 --test test1695222.json
